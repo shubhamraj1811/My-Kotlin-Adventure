@@ -14,4 +14,6 @@ fun main() {
     val myLetter1: Char = 'D'          // Char
     val myBoolean1: Boolean = true     // Boolean
     val myText1: String = "Hello"      // String
+
+    // numbers
 }
