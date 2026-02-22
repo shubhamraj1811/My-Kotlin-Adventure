@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.basics
+package ifeel.shubham.mykotlinjourney.Basics
 
 fun main() {
     // In Kotlin, the type of a variable is decided by its value

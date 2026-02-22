@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.basics
+package ifeel.shubham.mykotlinjourney.Basics
 
 fun main() {
     val num1 = 5
