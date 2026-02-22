@@ -126,6 +126,35 @@ Kotlin's operators are actually "syntactic sugar"—meaning when you use +, Kotl
 | %        | Modulus        | a % b   | a.rem(b)   |
 
 2. Comparison and Equality Operator
+These always return a Boolean (true or false).
+- **Referential Equality (===)**: Checks if two references point to the exact same object in memory.
+- **Structural Equality (==)**: Checks if the content of the two objects is the same (calls .equals()).
+
+| Operator | Meaning               | Example |
+|----------|-----------------------|---------|
+| ==       | Equal                 | a == b  |
+| !=       | Not Equal to          | a != b  |
+| >        | Greater Than          | a > b   |
+| <        | Less Than             | a < b   |
+| >=       | Greater than or equal | a >= b  |
+| <=       | Less than or equal    | a <= b  |
+
 3. Logical Operator
+Used to combine multiple boolean conditions.
+
+- && (Logical AND): True only if both sides are true.
+- || (Logical OR): True if at least one side is true.
+- ! (Logical NOT): Flips the value (true becomes false).
+
 4. Assignment Operator
+These combine an arithmetic operation with an assignment.
+
+- a += b is the same as a = a + b
+- a -= b is the same as a = a - b
+- a *= b is the same as a = a * b
+
 5. Increment and Decrement Operator
+- ++a or a++: Increases value by 1.
+- --a or a--: Decreases value by 1.
+
+**Note:** If you put the ++ before the variable (++a), it increments first, then returns the value. If it's after (a++), it returns the current value first, then increments it.
