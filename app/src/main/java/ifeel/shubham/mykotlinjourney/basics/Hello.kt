@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.Basics
+package ifeel.shubham.mykotlinjourney.basics
 
 fun main() {
     // print fun does not add a new line

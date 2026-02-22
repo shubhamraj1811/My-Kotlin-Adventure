@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.Basics
+package ifeel.shubham.mykotlinjourney.basics
 
 /*
 Numbers are divided into two groups:

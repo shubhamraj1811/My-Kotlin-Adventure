@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.Basics
+package ifeel.shubham.mykotlinjourney.basics
 
 fun main() {
     // immutable
