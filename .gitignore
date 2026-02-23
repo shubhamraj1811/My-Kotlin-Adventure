@@ -13,3 +13,15 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Android Studio / IntelliJ files
+.idea/
+.gradle/
+build/
+app/build/
+captures/
+
+# Local configuration (important: contains your SDK paths)
+
+# OS generated files
+Thumbs.db
