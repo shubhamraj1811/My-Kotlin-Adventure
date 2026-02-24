@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.basics
+package ifeel.shubham.mykotlinjourney.week01
 
 fun main() {
     // Print() vs Println()

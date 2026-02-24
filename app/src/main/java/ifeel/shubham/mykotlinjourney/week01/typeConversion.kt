@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.basics
+package ifeel.shubham.mykotlinjourney.week01
 // type conversion
 fun main() {
     val i: Int = 6

@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.basics
+package ifeel.shubham.mykotlinjourney.week01
 
 fun main() {
     // declaring a val without assigning any value to it

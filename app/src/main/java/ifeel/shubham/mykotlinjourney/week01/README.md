@@ -1,3 +1,32 @@
+# What is KOTLIN?
+Kotlin is a modern, trending programming language that was released in 2016 by JetBrains.
+It has become very popular since it is compatible with Java (one of the most popular programming languages out there), which means that Java code (and libraries) can be used in Kotlin programs.
+One of Kotlin's biggest selling points is Null Safety. It’s designed to eliminate the "NullPointerException"—a common bug that crashes Java apps constantly.
+> Kotlin is used for:
+- Mobile applications (specially Android apps)
+- Web development
+- Server side applications
+- Data science
+- And much, much more!
+
+# Why we use Kotlin?
+- Kotlin is fully compactible with Java.
+- Kotlin works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.).
+- Kotlin is concise and safe.
+- Kotlin is easy to learn.
+- It is free to use.
+- Kotlin has big community support.
+
+----
+
+# First Program in Kotlin
+[View Code](helloWorld.kt)
+
+## Breaking down the code
+- **fun:** It is short for function. This is how we declare any function in kotlin.
+- **main:** It is the entry point of this code. The JVM (Java Virtual Machine) looks for this specific name to start executing the code.
+- **():** This is where parameters would go. In modern Kotlin (1.3+), you don't even need to include args: Array<String> unless you are specifically using command-line arguments.
+- **println:** Short for "print line." It prints the text and then moves the cursor to a new line. Notice there is no semicolon (;) at the end! They are optional in Kotlin, and the community style is to leave them out.
 # Print Hello World
 
 `fun main() {

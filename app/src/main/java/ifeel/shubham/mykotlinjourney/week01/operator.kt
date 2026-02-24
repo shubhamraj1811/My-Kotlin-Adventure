@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.basics
+package ifeel.shubham.mykotlinjourney.week01
 
 fun main() {
     val price = 45.50 // in Rupees

@@ -10,7 +10,7 @@ Use the table below to jump directly to the specific topics and code samples.
 
 | Topic | Key Concepts | Direct Link to Code |
 | :--- | :--- | :--- |
-| **Day 01: Basics** | Variables, Data Types, Val vs Var | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/basics) |
+| **Day 01: Basics** | Variables, Data Types, Val vs Var | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/week01) |
 | **Day 02: Operators** | Arithmetic, Logical, Comparison | [View Code ↗️](app/src/main/java/path/to/Operators.kt) |
 | **Day 03: Control Flow** | If/Else, When, For Loops | [Coming Soon...] |
 

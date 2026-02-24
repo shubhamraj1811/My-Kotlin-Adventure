@@ -1,6 +1,11 @@
-package ifeel.shubham.mykotlinjourney.basics
+@file:JvmName("HelloVarKt")
+
+package ifeel.shubham.mykotlinjourney.week01
 
 fun main() {
+    // First Kotlin Program
+    println("Hello World")
+
     // print fun does not add a new line
     print("Hello Shubham")
     print("How are you?")

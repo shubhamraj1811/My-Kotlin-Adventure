@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.basics
+package ifeel.shubham.mykotlinjourney.week01
 
 fun main() {
     // In Kotlin, the type of a variable is decided by its value
@@ -15,5 +15,7 @@ fun main() {
     val myBoolean1: Boolean = true     // Boolean
     val myText1: String = "Hello"      // String
 
+
+    val hello = 9
     // numbers
 }
