@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.week01
+package ifeel.shubham.mykotlinjourney.week02
 
 fun main() {
     val num1 = 5
