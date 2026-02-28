@@ -69,23 +69,7 @@ In Kotlin, to create a variable, we use **var** or **val**, and assign a value t
 - Mutable
 - Its value can be changed even after value is assigned
 
----
-
-# Variable Types
-[View Code](Variables.kt)
-Variables in Kotlin do not need to be declared with a specified type ("String", "Int") because Kotlin is smart.
-# Print Hello World
-
-`fun main() {
-println("Hello World")
-}`
-
-## Breaking it Down
-* fun: This is the keyword used to declare a function.
-* main: This is the name of the function. Entry Point.
-* (): This is where parameters would go if we had any.
-* { ... }: These curly braces house the "body" of the code—the instructions you want the computer to follow.
-* println: Short for "print line." It prints the text inside the quotes to the console and then adds a new line at the end.
+-----------
 
 # Print vs Println
 * Print() fun prints the string but the cursor stays on the same line.
