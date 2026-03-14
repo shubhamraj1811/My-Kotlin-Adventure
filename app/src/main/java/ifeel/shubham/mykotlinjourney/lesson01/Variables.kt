@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.Lesson01
+package ifeel.shubham.mykotlinjourney.lesson01
 
 fun main () {
     // immutable - val

@@ -10,8 +10,8 @@ Use the table below to jump directly to the specific topics and code samples.
 
 | Topic        | Key Concepts                    | Direct Link to Code                                                    |
 |:-------------|:--------------------------------|:-----------------------------------------------------------------------|
-| **Level 01** | Variables, Comments, Val vs Var | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/Lesson01) |
-| **Level 02** | DataTypes                       | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/Lesson02) |
+| **Level 01** | Variables, Comments, Val vs Var | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson01) |
+| **Level 02** | DataTypes                       | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson02) |
 
 ---
 

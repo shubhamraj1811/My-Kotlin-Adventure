@@ -1,4 +1,4 @@
-package ifeel.shubham.mykotlinjourney.Lesson02
+package ifeel.shubham.mykotlinjourney.lesson02
 
 fun main() {
     // In kotlin the data type is decided upon its value.
