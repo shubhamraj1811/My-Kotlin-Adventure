@@ -1,7 +1,9 @@
 # 🔥 Table of Contents
 
 1. [Kotlin Datatypes](#kotlin-datatypes)
-2. [Excersice 2](#-exercise-2-defining-a-user-profile-state)
+2. [Type Inference](#type-inference)
+3. [Exercise 02](#-exercise-2-defining-a-user-profile-state)
+4. [Exercise 03](#-exercise-3-proving-the-concept)
 
 ---
 
@@ -9,7 +11,7 @@
 In Kotlin, every type is an object, which gives us access to powerful built-in functions.
 The datatypes in Kotlin are grouped into 5 Categories:
 
-1. Numbers (Integers & Floating Points):
+1. **Numbers (Integers & Floating Points):**
    - Int (32-bit):
      - Standard whole number
      - Android Use Case: Referencing Android Resources, counting Items, or setting dimensions.
@@ -21,26 +23,38 @@ The datatypes in Kotlin are grouped into 5 Categories:
      - UI Animations, Alpha (transparency) or view coordinates
    - Double (64-bit):
      - For high precision decimals.
-     - GPS cordinates (latitude/longitude) or financial calculations.
+     - GPS co-ordinates (latitude/longitude) or financial calculations.
 
-2. Booleans:
+2. **Booleans:**
    - Booleans is either True or False
    - Feature flags or UI state
 
-3. Characters:
-   - A single 16-bit unicide character used sparingly on its own.
+3. **Characters:**
+   - A single 16-bit unicode character used sparingly on its own.
    - Parsing custom formats or dealing with keyboard input events.
 
-4. Strings:
+4. **Strings:**
    - A sequence of characters 
    - String is immutable in kotlin.
    - Used in displaying text to the user.
 
-5. Array:
+5. **Array:**
    - A collection of data of the same type.
    - Passing a fixed list of permissions to the Android OS.
 
 ---
+
+# Type Inference
+
+- In Python, we are used to dynamically typed variables that just take on whatever type they are assigned.
+- And in C++, we are used to statically typed variables where we tell the compiler what type of variable we are declaring.
+- Kotlin gives you the best of both worlds.
+- It is statically typed (meaning types are checked at compile time, catching errors early).
+- But the compiler is smart enough to figure out the type based on the value we assign to it.
+- This is Type Inference.
+- We don't need to explicitly write the type on the left side of the equals sign if the right side makes it obvious.
+- [Note: Type inference is the default, but we always use explicit typing in one specific scenario: **Public APIs and Return Types**.]
+
 
 # 🛠 Exercise 2: Defining a User Profile State
 Let's put this into practice. Imagine you are building a "User Profile" screen for a fitness Android app.
@@ -61,3 +75,18 @@ I want you to write a small piece of code. Don't worry about wrapping it in a ma
 2. Because basePrice acts like an object, use the built-in Kotlin method .toInt() on basePrice to convert it to a whole number, and assign the result to a new immutable variable called roundedPrice.
 3. Declare a nullable integer called userDiscount and set it to null.
 4. Convert roundedPrice to a String using .toString() and assign it to a variable called priceTag.
+
+---
+
+# 🛠 Exercise 4: The RPG Character State
+
+Let's put Type Inference into practice.
+Let's say we're building the core engine for a text-based RPG game.  
+You need to initialize a new player character.  
+Write the code to declare the following variables, but you are strictly forbidden from explicitly writing the data types (do not use : Int, : String, etc.). Let the compiler infer everything:
+
+1. A variable for the player's heroName (e.g., "Arthur").
+2. A variable for goldCoins starting at 50.
+3. A variable for criticalHitChance starting at 12.5 (needs to be inferred as a Double).
+4. A variable for isPoisoned starting as false.
+5. Challenge: Declare a variable called equippedWeapon. It should currently be null, but it needs to be capable of holding a String later. (Think carefully about this one and how type inference handles nulls!).

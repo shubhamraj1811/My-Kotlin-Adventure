@@ -1,10 +1,11 @@
 # 🔥 Table of Contents
 
 1. [Kotlin](#what-is-kotlin)
-2. [First Program in Kotlin](#first-program-in-kotlin)
-3. [Kotlin Output](#kotlin-output)
-4. [Comments](#comments)
-5. [Kotlin Variables](#kotlin-variables)
+2. [First Program in Kotlin](#first-program-in-kotlin--view-code)
+3. [Kotlin Output](#kotlin-output--view-code)
+4. [Comments](#comments--view-code)
+5. [Kotlin Variables](#kotlin-variables--view-code)
+6. [Exercise 01](#-exercise-1-the-onboarding-script)
 
 
 # What is KOTLIN?
@@ -12,14 +13,14 @@ Kotlin is a modern, trending programming language that was released in 2016 by J
 It has become very popular since it is compatible with Java (one of the most popular programming languages out there), which means that Java code (and libraries) can be used in Kotlin programs.
 One of Kotlin's biggest selling points is Null Safety. It’s designed to eliminate the "NullPointerException"—a common bug that crashes Java apps constantly.
 
-> **Kotlin is used for:**
+## **Kotlin is used for:**
 - Mobile applications (specially Android apps)
 - Web development
 - Server side applications
 - Data science
 - And much, much more!
 
-# Why we use Kotlin?
+## Why we use Kotlin?
 - Kotlin is fully compactible with Java.
 - Kotlin works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.).
 - Kotlin is concise and safe.
@@ -83,10 +84,13 @@ In Kotlin, to create a variable, we use **var** or **val**, and assign a value t
 ---
 
 # 🛠 Exercise 1: The Onboarding Script
-I want you to write a small snippet for a user onboarding system.
+Scenario: You're building the profile screen of an Android app.
+Write Kotlin variables to store the following information for a user profile.  
+Think carefully — which ones should be val and which should be var? Then use a String template to print a summary.
 
-1. Define a constant for the applicationName.
-2. Define a variable for the userCount that starts at 0.
-3. Define a nullable String for referralCode (because some users don't have one).
-4. Try to assign null to your applicationName and see what happens (tell me the result).
-5. Increment the userCount by 1.
+1. The user's full name (Priya Sharma)
+2. Their username (priya_dev)
+3. Their age (22)
+4. Their follower count (starts at 0, will grow)
+5. Whether their account is verified (not verified yet)
+6. Their bio ("Android developer from Mumbai")
