@@ -1,19 +1,18 @@
 package ifeel.shubham.mykotlinjourney.lesson02
 
-// text based RPG game
+// Exercise 3
 fun main() {
-    println("Enter Your Hero Name: ")
-    val heroName = readln()
-    val critHitChance = 12.5
+    // immutable variable basePrice
+    val basePrice: Double = 10.50
+    // use built in method on Double Object to convert it into Int
+    val roundedPrice: Int = basePrice.toInt()
+    // nullable integer
+    val userDiscount: Int? = null
+    // convert roundedPrice to String
+    val priceTag: String = basePrice.toString()
 
-    var isPoisoned = false
-    var goldCoins = 50
-    var equippedWeapon: String? = null
-
-    // print statement
-    println("Hero Name is $heroName")
-    println("$heroName has $goldCoins Coins")
-    println("$heroName has a Critical Hit Chance of $critHitChance%")
-    println("Poison Status: $isPoisoned")
-    println("Equipped Weapon: $equippedWeapon")
+    println("Base Price (Double): $basePrice")
+    println("Rounded Price (Int): $roundedPrice")
+    println("User Discount (Int?): $userDiscount")
+    println("Price Tag (String): $priceTag")
 }

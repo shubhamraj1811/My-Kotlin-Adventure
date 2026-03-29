@@ -1,17 +1,22 @@
 package ifeel.shubham.mykotlinjourney.lesson02
-// Exercise 3
-fun main() {
-    // immutable variable basePrice
-    val basePrice: Double = 10.50
-    // use built in method on Double Object to convert it into Int
-    val roundedPrice: Int = basePrice.toInt()
-    // nullable integer
-    val userDiscount: Int? = null
-    // convert roundedPrice to String
-    val priceTag: String = basePrice.toString()
 
-    println("Base Price (Double): $basePrice")
-    println("Rounded Price (Int): $roundedPrice")
-    println("User Discount (Int?): $userDiscount")
-    println("Price Tag (String): $priceTag")
+fun main() {
+    // # 🛠 Exercise 2: Defining a User Profile State
+    val databaseId: Long = 23151158030L
+    var weight: Double = 75.5
+    var premiumStatus: Boolean = true
+    var completedWorkouts: Int = 11
+    val name: String = "Shubham Raj"
+
+    // User Update
+    weight += 1.3
+    premiumStatus = false
+    completedWorkouts += 2
+
+    // display
+    println("User ID: $databaseId")
+    println("User Weight: $weight")
+    println("User has Premium Subscription: $premiumStatus")
+    println("Number of Workouts Completed: $completedWorkouts")
+    println("User Name: $name")
 }

@@ -8,10 +8,10 @@ This repository is my personal workspace where I document my learning process, f
 ## 🗺️ Roadmap & Progress
 Use the table below to jump directly to the specific topics and code samples.
 
-| Topic        | Key Concepts                    | Direct Link to Code                                                    |
-|:-------------|:--------------------------------|:-----------------------------------------------------------------------|
-| **Level 01** | Variables, Comments, Val vs Var | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson01) |
-| **Level 02** | DataTypes                       | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson02) |
+| Topic         | Key Concepts                    | Direct Link to Code                                                    |
+|:--------------|:--------------------------------|:-----------------------------------------------------------------------|
+| **Lesson 01** | Variables, Comments, Val vs Var | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson01) |
+| **Lesson 02** | DataTypes                       | [View Code ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson02) |
 
 ---
 

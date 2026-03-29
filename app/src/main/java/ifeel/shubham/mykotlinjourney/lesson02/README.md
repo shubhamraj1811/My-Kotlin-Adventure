@@ -55,8 +55,9 @@ The datatypes in Kotlin are grouped into 5 Categories:
 - We don't need to explicitly write the type on the left side of the equals sign if the right side makes it obvious.
 - [Note: Type inference is the default, but we always use explicit typing in one specific scenario: **Public APIs and Return Types**.]
 
+---
 
-# 🛠 Exercise 2: Defining a User Profile State
+# 🛠 Exercise 003: Defining a User Profile State
 Let's put this into practice. Imagine you are building a "User Profile" screen for a fitness Android app.
 I want you to write the Kotlin code to declare the following variables. Explicitly state the data types (e.g., val name: String = ...) so I know you grasp the concepts:
 1. A variable for the user's unique database ID (could be billions of users).
@@ -67,7 +68,7 @@ I want you to write the Kotlin code to declare the following variables. Explicit
 
 ---
 
-# 🛠 Exercise 3: Proving the Concept
+# 🛠 Exercise 004: Proving the Concept
 Let's prove that Kotlin numbers act like objects, while combining it with our lesson on data types.
 I want you to write a small piece of code. Don't worry about wrapping it in a main function, just write the lines of code:
 
@@ -78,8 +79,7 @@ I want you to write a small piece of code. Don't worry about wrapping it in a ma
 
 ---
 
-# 🛠 Exercise 4: The RPG Character State
-
+# 🛠 Exercise 005: The RPG Character State
 Let's put Type Inference into practice.
 Let's say we're building the core engine for a text-based RPG game.  
 You need to initialize a new player character.  

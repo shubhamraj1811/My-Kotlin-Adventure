@@ -11,4 +11,7 @@ fun main() {
     // We can also specify the datatype
     val myNum1: Int = 5                // Int
     val myDoubleNum1: Double = 5.99    // Double
+    val myLetter1: Char = 'D'          // Char
+    val myBoolean1: Boolean = true     // Bool
+    val myText1: String = "Hello"      // String
 }
