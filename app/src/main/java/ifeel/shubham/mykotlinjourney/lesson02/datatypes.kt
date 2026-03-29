@@ -12,6 +12,19 @@ fun main() {
     val myNum1: Int = 5                // Int
     val myDoubleNum1: Double = 5.99    // Double
     val myLetter1: Char = 'D'          // Char
-    val myBoolean1: Boolean = true     // Bool
+    val myBoolean1: Boolean = true     // Boolean
     val myText1: String = "Hello"      // String
+
+    // print all
+    println(myNum)
+    println(myDoubleNum)
+    println(myLetter)
+    println(myBoolean)
+    println(myText)
+
+    println(myNum1)
+    println(myDoubleNum1)
+    println(myLetter1)
+    println(myBoolean1)
+    println(myText1)
 }

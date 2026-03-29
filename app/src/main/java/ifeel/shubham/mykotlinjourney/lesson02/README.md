@@ -2,8 +2,9 @@
 
 1. [Kotlin Datatypes](#kotlin-datatypes)
 2. [Type Inference](#type-inference)
-3. [Exercise 02](#-exercise-2-defining-a-user-profile-state)
-4. [Exercise 03](#-exercise-3-proving-the-concept)
+3. [Exercise 03](#-exercise-003-defining-a-user-profile-state)
+4. [Exercise 04](#-exercise-004-proving-the-concept)
+5. [Exercise 05](#-exercise-005-the-rpg-character-state)
 
 ---
 
@@ -11,6 +12,7 @@
 In Kotlin, every type is an object, which gives us access to powerful built-in functions.
 The datatypes in Kotlin are grouped into 5 Categories:
 
+**View Code Here:** [Kotlin File](datatypes.kt)
 1. **Numbers (Integers & Floating Points):**
    - Int (32-bit):
      - Standard whole number
@@ -66,6 +68,8 @@ I want you to write the Kotlin code to declare the following variables. Explicit
 4. A variable for the number of workouts they've completed.
 5. A variable for their display name.
 
+**View The Code Here:** [Exercise 03](exercise03.kt)
+
 ---
 
 # 🛠 Exercise 004: Proving the Concept
@@ -76,6 +80,8 @@ I want you to write a small piece of code. Don't worry about wrapping it in a ma
 2. Because basePrice acts like an object, use the built-in Kotlin method .toInt() on basePrice to convert it to a whole number, and assign the result to a new immutable variable called roundedPrice.
 3. Declare a nullable integer called userDiscount and set it to null.
 4. Convert roundedPrice to a String using .toString() and assign it to a variable called priceTag.
+
+**View The Code Here:** [Exercise 04](exercise04.kt)
 
 ---
 
@@ -90,3 +96,5 @@ Write the code to declare the following variables, but you are strictly forbidde
 3. A variable for criticalHitChance starting at 12.5 (needs to be inferred as a Double).
 4. A variable for isPoisoned starting as false.
 5. Challenge: Declare a variable called equippedWeapon. It should currently be null, but it needs to be capable of holding a String later. (Think carefully about this one and how type inference handles nulls!).
+
+**View The Code Here:** [Exercise 05](exercise05.kt)

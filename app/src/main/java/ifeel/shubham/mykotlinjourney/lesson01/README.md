@@ -6,7 +6,8 @@
 4. [Taking Input - readln()](#taking-input---readln)
 5. [Comments](#comments)
 6. [Kotlin Variables](#kotlin-variables)
-7. [Exercise 01](#-exercise-1-the-onboarding-script)
+7. [Exercise 01](#-exercise-001-the-onboarding-script)
+8. [Exercise 02](#-exercise-002-the-merchants-shop-exercise-6-the-merchants-shop)
 
 ---
 
@@ -125,6 +126,7 @@ Think carefully — which ones should be val and which should be var? Then use a
 5. Whether their account is verified (not verified yet)
 6. Their bio ("Android developer from Mumbai")
 
+**View The Code Here:** [Exercise 01](exercise01.kt)
 ---  
 
 # 🛠 Exercise 002: The Merchant's Shop🛠 Exercise 6: The Merchant's Shop
@@ -137,3 +139,5 @@ I want you to write a main function that does the following:
 3. Ask the user how much they are willing to pay per item (Read as a Double). Use safe conversion. If they type garbage, default the price to 0.0.
 4. Print out a summary of their order, calculating the totalCost (quantity * price).
 5. Write the code for this shop interaction below, ensuring it won't crash no matter what the user types!
+
+**View The Code Here:** [Exercise 02](exercise02.kt)

@@ -12,4 +12,18 @@ fun main() {
     var followerCount = 0
     var IsVerified: Boolean = false
     var bio: String = "Android Developer from Mumbai"
+
+    // [ After a period, var Changes]
+    age = age + 1
+    followerCount = 100+50+110+40
+    IsVerified = true
+    bio = "Android Developer in Bangalore"
+
+    // print
+    println("Your name is $fullName")
+    println("Your id is $userName")
+    println("Your age is $age")
+    println("Followers: $followerCount")
+    println("Status: $IsVerified")
+    println("About: $bio")
 }
