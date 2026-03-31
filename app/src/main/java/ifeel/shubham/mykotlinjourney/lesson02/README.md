@@ -5,7 +5,7 @@
 3. [Exercise 03](#-exercise-003-defining-a-user-profile-state)
 4. [Exercise 04](#-exercise-004-proving-the-concept)
 5. [Exercise 05](#-exercise-005-the-rpg-character-state)
-
+6. [Operators & Special Symbols](#operators--special-symbols)
 ---
 
 # Kotlin Datatypes
@@ -97,4 +97,47 @@ Write the code to declare the following variables, but you are strictly forbidde
 4. A variable for isPoisoned starting as false.
 5. Challenge: Declare a variable called equippedWeapon. It should currently be null, but it needs to be capable of holding a String later. (Think carefully about this one and how type inference handles nulls!).
 
-**View The Code Here:** [Exercise 05](exercise05.kt)
+**View The Code Here:** [Exercise 05](exercise05.kt)**
+
+---
+
+# Operators
+An operator is a symbol that performs an action on one or more values.
+
+## 1️⃣ Arithmetic Operators
+Works exactly like maths.  
+`+` = add  
+`-` = sub  
+`*` = product  
+`/` = divide  
+`%` = module  
+**[View Code Here](airthmaticOperator.kt)
+
+## 2️⃣ Assignment Operators
+Assigns Value. Like `var score = 10`.  
+There are other assignment operators like +=, -=, /=, *=, %=.  
+
+## 3️⃣ Comparison Operator
+These always return true or false (Boolean). Used constantly in conditions:  
+* `==` Checks for equality
+* `!=` Not Equal
+* `>` Smaller
+* `<` Greater
+* `>=` Smaller or Equal
+* `<=` Greater or Equal
+**Check the Code here:** [View Code](comparisonOperator.kt)
+
+## 4️⃣ Logical Operator
+Used to combine multiple conditions together:  
+1. && → AND → BOTH sides must be true
+2. || → OR → AT LEAST ONE side must be true
+3. ! → NOT → flips true to false, false to true
+   **Check the Code here:** [View Code](logicalOperator.kt)
+
+## 5️⃣ String Operators
+Used with String.  
+1. `" "`
+2. `$`
+
+## 6️⃣ Range & Membership Operators 🌟
+This is where Kotlin shines. Instead of writing long, complicated greater-than/less-than checks, Kotlin gives us the Range (..) and Membership (in) operators.

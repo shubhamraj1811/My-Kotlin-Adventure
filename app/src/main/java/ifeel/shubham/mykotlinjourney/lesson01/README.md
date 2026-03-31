@@ -127,6 +127,7 @@ Think carefully — which ones should be val and which should be var? Then use a
 6. Their bio ("Android developer from Mumbai")
 
 **View The Code Here:** [Exercise 01](exercise01.kt)
+
 ---  
 
 # 🛠 Exercise 002: The Merchant's Shop🛠 Exercise 6: The Merchant's Shop
