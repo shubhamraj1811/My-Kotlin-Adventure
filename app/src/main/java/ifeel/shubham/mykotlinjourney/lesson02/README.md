@@ -5,7 +5,9 @@
 3. [Exercise 03](#-exercise-003-defining-a-user-profile-state)
 4. [Exercise 04](#-exercise-004-proving-the-concept)
 5. [Exercise 05](#-exercise-005-the-rpg-character-state)
-6. [Operators & Special Symbols](#operators--special-symbols)
+6. [Operators](#operators)
+7. [Special Symbols](#special-symbols)
+8. [Exersice 06](#-exercise-006--operators-in-action)
 ---
 
 # Kotlin Datatypes
@@ -139,5 +141,48 @@ Used with String.
 1. `" "`
 2. `$`
 
-## 6️⃣ Range & Membership Operators 🌟
-This is where Kotlin shines. Instead of writing long, complicated greater-than/less-than checks, Kotlin gives us the Range (..) and Membership (in) operators.
+## 6️⃣ Range Operator
+**[Check The Code Here](rangeMembership.kt)**
+This is where Kotlin shines. Instead of writing long, complicated greater-than/less-than checks, Kotlin gives us the Range (..) and Membership (in) operators.  
+It Checks Everything between x and y.  
+
+## 7️⃣ Membership Operators
+### `in`
+- specifies the object being iterated in a for loop.
+- is used as an infix operator to check that a value belongs to a range, a collection, or another entity that defines a 'contains' method.
+- is used in when expressions for the same purpose.
+- marks a type parameter as contravariant.
+
+### `!in`
+- is used as an operator to check that a value does NOT belong to a range, a collection, or another entity that defines a 'contains' method.
+- is used as an operator to check that a value does NOT belong to a range, a collection, or another entity that defines a 'contains' method.
+
+# Special Symbols
+
+### to
+**[View Code Here](specialSymbol.kt)**
+- creates a pair
+- Link two values together as a key-value pair
+
+### is — Type Check
+**[View Code Here](specialSymbol.kt)**
+- is performs a Type Check
+- It asks the compiler a simple true/false question: "Is this variable a specific data type?"
+
+### Increment & Decrement
+**[View Code Here](specialSymbol.kt)**
+- We already know
+
+---
+
+# ✍️ Exercise 006 — Operators in Action
+Scenario: You're building a simple Android game score tracker.  
+Write a Kotlin program that:  
+1. Creates a variable playerName = "Shubham", score = 0, level = 1, lives = 3
+2. Player earns 50 points → update score using assignment operator
+3. Player earns 30 more points → update again
+4. Player clears a level → increment level using ++
+5. Player loses a life → decrement lives using -- 
+6. Print: "Shubham | Level 2 | Score: 80 | Lives: 2"
+7. Check if score is in range 50..100 and print "Bonus range: true/false"
+8. Check if lives > 0 && score > 50 and print "Still in game: true/false"
