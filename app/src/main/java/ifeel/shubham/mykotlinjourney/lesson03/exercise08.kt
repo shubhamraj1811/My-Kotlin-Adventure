@@ -3,21 +3,30 @@ package ifeel.shubham.mykotlinjourney.lesson03
 fun main() {
     // ----- Food Delivery App Interface -----
 
-    val customerName = "Shubham"
-    val orderAmount = 850        // in rupees
-    val isMember = true
-    val distance = 12            // km from restaurant
-    val timeOfDay = "night"      // "morning", "afternoon", "night"
+    print("Enter Customer Name: ")
+    val customerName = readln()
+    print("Enter Order Amount (in Rupees): ")
+    val orderAmount = readln().toInt()        // in rupees
+    print("Is Member: ")
+    val isMember = readln().toBoolean()
+    print("Enter Distance (in km): ")
+    val distance = readln().toInt()            // km from restaurant
+    print("Enter Time of Day (morning/afternoon/night): ")
+    val timeOfDay = readln()      // "morning", "afternoon", "night"
 
     // ----- 01. Delivery Check if Delivery is Free -----
-    if(orderAmount > 500) println("Delivery: Free") else println("Delivery: ₹40")
+    if (orderAmount > 500) {
+        println("Delivery: Free")
+    } else {
+        println("Delivery: ₹40")
+    }
 
     // ====== 02. Greetings -----
-    when(timeOfDay) {
-        "morning" -> println("Good Morning, Shubham!")
-        "afternoon" -> println("Good Afternoon, Shubham!")
-        "night" -> println("Good Night, Shubham!")
-        else -> println("Hello, Shubham!")
+    when (timeOfDay) {
+        "morning"   -> println("Good Morning, $customerName!")
+        "afternoon" -> println("Good Afternoon, $customerName!")
+        "night"     -> println("Good Night, $customerName!")
+        else        -> println("Hello, $customerName!")
     }
 
     // ----- 03. Delivery Time -----
@@ -27,6 +36,7 @@ fun main() {
         in 11..20   -> "45-60 mins"
         else             -> "60+ mins"
     }
+    println("Estimated delivery: $deliveryTime")
 
     // ----- 04. Calculate Discount -----
     val discount = when {
@@ -35,6 +45,7 @@ fun main() {
         !isMember && orderAmount > 1000 -> "5%"
         else -> "No Discount"
     }
+    println("Discount: $discount")
 
     // ----- 05. Order Summary -----
     println("Order Summary - $customerName | ₹$orderAmount | $deliveryTime | Discount: $discount")

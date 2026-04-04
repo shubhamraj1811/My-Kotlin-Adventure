@@ -5,6 +5,7 @@
 3. [When Expression](#when-expression)
 4. [Exercise 07](#-exercise-007-the-tavern-encounter)
 5. [Exercise 08](#-exercise-008-conditionals-in-action)
+6. [Loops](#loops-in-kotlin)
 
 ---
 
@@ -17,7 +18,7 @@
 ---
 
 # The Basic Structure - `if`/`else if`/`else`
-We already know the basic structure of if/else.
+We already know the basic structure of if/else.  
 **[Check The Code Here](basicStructure.kt)**
 
 ## Returns a Value
@@ -92,3 +93,75 @@ val timeOfDay = "night"      // "morning", "afternoon", "night"
    5. Print: "Discount: 10%"
 5. Final summary line using string template:
    1. "Order summary — Shubham | ₹850 | 45-60 mins | Discount: 10%"
+
+---
+
+# ➰ Loops in Kotlin
+In production, we use loops for three main things:  
+- displaying lists of data (like an Android news feed)
+- running background polling (checking a server every 5 seconds)
+- game loops (updating the screen 60 times a second).
+
+## 🧠 The Core Idea
+Imagine we're building an app that needs to:  
+- Send a notification to 1000 users.
+- Load 50 messages in a chat screen.
+- Check every item in a shopping cart.
+- Loops let you repeat a block of code automatically — either a fixed number of times, or until a condition is met.  
+
+[Note: Kotlin's for loop iterates over anything that provides an iterator (like a Range or a List).]   
+
+## 🚗 Types of Loop in Kotlin
+1. for loop      → repeat over a range or collection
+2. while loop    → repeat while condition is true
+3. do-while loop → run once, then repeat while condition is true
+4. forEach       → modern Kotlin way to loop collections
+
+## 1️⃣ For Loop
+**Basic Structure:**   
+`for (item in collection) {`  
+`// code to repeat`  
+`}`  
+**[Check The Code Here](forLoop.kt)**  
+
+### Looping Over a Range
+`// Print 1 to 5`  
+`for (i in 1..5) {`  
+`println(i)`  
+`}`  
+
+- `i` is just a variable name — it holds the current value each time.
+- We can name it anything.
+- Convention is i, j, k for simple counters, or descriptive names for real data.
+
+### until — Exclusive Upper Bound  
+- Until is used When working with lists and arrays, their index starts at 0 and ends at size - 1
+**[Check The Code Here](forLoop.kt)**  
+
+### downTo — Counting Backwards
+- Used in countdown or timers.  
+**[Check The Code Here](forLoop.kt)**
+
+### step — Skip Values
+- used to skip the iteration and move to next iteration.  
+**[Check The Code Here](forLoop.kt)**  
+
+### Looping Over a List
+- used to visit each element of an array.
+- **[Check The Code Here](loopingList.kt)**
+
+### Loop With Index — withIndex()
+- We'll use this in Android RecyclerView adapters constantly — knowing the position of each item.
+- **[Check The Code Here](loopingList.kt)**
+
+## The While Loop
+- A while loop runs continuously as long as a condition is true.
+- It checks the condition BEFORE running the block.
+- Use while when we don't know in advance how many times it'll loop — we loop until something happens.
+
+`while (condition) {`  
+`// runs as long as condition is TRUE`  
+`}`  
+**[Check The Code Here](whileLoop.kt]**
+
+# 🟦 Real Android use case — waiting for data to load:
