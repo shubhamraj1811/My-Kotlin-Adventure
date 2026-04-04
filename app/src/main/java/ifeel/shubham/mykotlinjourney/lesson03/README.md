@@ -6,6 +6,7 @@
 4. [Exercise 07](#-exercise-007-the-tavern-encounter)
 5. [Exercise 08](#-exercise-008-conditionals-in-action)
 6. [Loops](#loops-in-kotlin)
+7. [Android Use Case](#-android-use-case--waiting-for-data-to-load)
 
 ---
 
@@ -164,4 +165,9 @@ Imagine we're building an app that needs to:
 `}`  
 **[Check The Code Here](whileLoop.kt]**
 
-# 🟦 Real Android use case — waiting for data to load:
+# 🟦 Android use case — waiting for Data to Load
+**[Check The Code Here](loopAndroidUseCase.kt)**
+
+# ⚠️ Infinite Loop — The Danger Zone
+**Senior engineer rule:** Every while loop must have a clear exit condition that will definitely be reached. Always double-check your loop will terminate.  
+**[Check The Code Here](infiniteLoop.kt)**
