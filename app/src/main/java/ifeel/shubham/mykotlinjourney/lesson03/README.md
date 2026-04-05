@@ -7,6 +7,12 @@
 5. [Exercise 08](#-exercise-008-conditionals-in-action)
 6. [Loops](#loops-in-kotlin)
 7. [Android Use Case](#-android-use-case--waiting-for-data-to-load)
+8. [Infinite Loop — The Danger Zone](#-infinite-loop--the-danger-zone)
+9. [Do-While Loop](#do-while-loop)
+10. [The Modern Kotlin: forEach](#the-modern-kotlin-foreach)
+11. [Break and Continue](#break-and-continue)
+12. [Loop Cheatsheet](#-loop-cheatsheet)
+13. [Exercise 09](#-exercise-009-loops-in-action)
 
 ---
 
@@ -66,8 +72,8 @@ Scenario: We're building an Android food delivery app.
 Write a Kotlin program with the following logic:  
 **Variables to start with:**  
 `
-val customerName = "Shubham"     
-val orderAmount = 850        // in rupees     
+val customerName = "Shubham"         
+val orderAmount = 850        // in rupees         
 val isMember = true     
 val distance = 12            // km from restaurant  
 val timeOfDay = "night"      // "morning", "afternoon", "night"  
@@ -171,3 +177,98 @@ Imagine we're building an app that needs to:
 # ⚠️ Infinite Loop — The Danger Zone
 **Senior engineer rule:** Every while loop must have a clear exit condition that will definitely be reached. Always double-check your loop will terminate.  
 **[Check The Code Here](infiniteLoop.kt)**
+
+# Do-While Loop
+while     → checks condition FIRST → might never run  
+do-while  → runs ONCE FIRST → then checks condition  
+[Check The Code Here](doWhile.kt)
+
+## Real App Use Case - OTP Verification
+[Check The Code Here](otpVerification.kt)
+
+# The Modern Kotlin: forEach
+- forEach is what we'll actually use in real Android code.
+- The for loop is for ranges and indexed access. We'll go much deeper on forEach in the Lambdas module.
+- **[Check The Code Here](forEach.kt)**
+
+# Break and Continue
+Sometimes, We need to hijack a loop while it's running.  
+**[Check The Code Here](breakAndContinue.kt)**  
+
+## Break
+- Instantly shatters the loop and stops it completely.  
+- You are searching a massive database for a user.
+- Once you find them, you break the loop to save CPU power.
+- **break** — Exit the Loop Immediately
+
+## Continue
+- Skips the rest of the current cycle and instantly jumps to the next cycle.
+- Looping through a list of files to upload, but if a file is corrupted, you continue to skip uploading it and move to the next one.
+- **continue** — Skip This Iteration, Keep Looping
+
+---
+
+# 📆 Loop Cheatsheet
+
+for (i in 1..5)          → 1, 2, 3, 4, 5  
+for (i in 1 until 5)     → 1, 2, 3, 4  
+for (i in 5 downTo 1)    → 5, 4, 3, 2, 1  
+for (i in 1..10 step 2)  → 1, 3, 5, 7, 9  
+for (item in list)       → each item in list  
+for ((i, item) in list.withIndex()) → index + item  
+
+while (condition)        → check first, then run  
+do { } while(condition)  → run once, then check  
+
+break                    → exit loop now  
+continue                 → skip to next iteration  
+forEach { }              → modern Kotlin loop  
+
+---
+
+# 🛠 Exercise 009: Loops in Action
+Scenario: You're building features for an Android e-commerce app.
+> Starting data:  
+val productNames = listOf("Shoes", "T-Shirt", "Watch", "Headphones", "Backpack")  
+val productPrices = listOf(2999, 599, 4999, 1999, 1499)  
+val outOfStock = listOf("Watch")
+
+## Tasks:
+
+> Task 1 — Product Listing:  
+Use a for loop with withIndex() to print each product with its number:
+
+1. Shoes - ₹2999
+2. T-Shirt - ₹599
+3. Watch - ₹4999
+4. Headphones - ₹1999
+5. Backpack - ₹1499
+
+> Task 2 — Flash Sale Countdown:  
+Use downTo to print a countdown from 5 to 1, then print "Flash Sale Started! 🔥"
+
+> Task 3 — Skip Out of Stock:  
+Loop through productNames. Use continue to skip "Watch" and print all others:
+
+Available: Shoes  
+Available: T-Shirt  
+Available: Headphones  
+Available: Backpack  
+
+> Task 4 — Find First Expensive Item:  
+Loop through productPrices. Use break to stop at the first price above ₹3000 and print:
+
+`"First expensive item found at position 3 — ₹4999"`
+
+> Task 5 — Loading Simulation:  
+Use a while loop to simulate loading chunks of data:  
+
+var loadedItems = 0  
+val totalItems = 20  
+val chunkSize = 5  
+
+Loaded 5/20 items...  
+Loaded 10/20 items...  
+Loaded 15/20 items...  
+Loaded 20/20 items...  
+All items loaded! ✅
