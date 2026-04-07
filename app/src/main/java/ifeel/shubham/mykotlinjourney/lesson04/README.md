@@ -1,8 +1,20 @@
 # 🔥 Table of Contents
 1. [Function Definition](#function)
 2. [Function With Parameter](#function-with-parameter)
+3. [Function That Return Value](#function-that-return-value)
+4. [Single Expression Function](#single-expression-functions)
+5. [Default Parameter Value](#-default-parameter-values)
+6. [Named Arguments](#-named-arguments)
+7. [Unit Function](#-unit-function)
+8. [Function Calling Functions](#-functions-calling-functions)
+9. [Vargs](#-vararg--variable-number-of-arguments)
+10. [Local Functions](#-local-functions)
+11. [Real Android Example](#-real-android--complete-feature-example)
+
+---
 
 # Function
+
 - A function is a self-contained block of code designed to do exactly one thing.
 - If our function is calculating health, saving to a database, and playing a sound effect all at the same time, it’s badly designed.
 - We call this the Single Responsibility Principle.
@@ -22,7 +34,7 @@ fun formatChatTimestamp(timestamp: Long): String {
     return formattedDate  
 }  
 
-**[First Function Code](basicFunction.kt)**
+**💻 [First Function Code](basicFunction.kt)**
 
 ## Why Use Function:
 - From the above code example we can clearly see that
@@ -30,28 +42,132 @@ fun formatChatTimestamp(timestamp: Long): String {
 - You used it three times. 
 - In a real app, greetUser() might be called from the login screen, the splash screen, and the onboarding screen — same function, zero duplication.
 
+---
+
 # Function With Parameter
+
 Parameters are inputs you pass into a function:
 
 ## Single Parameter
-[Check The Code Here](funWithSingleParam.kt)
+**💻 [Check The Code Here](funWithSingleParam.kt)**
 
 ## Multiple Parameters
-[Check The Code Here](funWithMultipleParams.kt)
+**💻 [Check The Code Here](funWithMultipleParams.kt)**
 
 ---
 
 # Function That Return Value
+
 A function can give back a result using return:
 
 ## Real Android Use Case:
 Real Android use case — calculate discount
-[Check Code Here](calcDiscount.kt)
+
+**💻 [Check Code Here](calcDiscount.kt)**
 
 ---
 
 # Single Expression Functions
+
 When a function just returns one expression, Kotlin lets you write it in one line: 
 Like we had to write a fun to calculate square.  
-fun square(n: Int) = n * n  
-**[Check The Code Here](singleExpressionFun.kt)**
+
+`fun square(n: Int) = n * n`  
+
+**💻 [Check The Code Here](singleExpressionFun.kt)**
+
+- We'll use single expression functions constantly in Android — ViewModels, repositories, utility classes.
+- They're clean, readable, and professional.
+
+---
+
+# 📌 Default Parameter Values
+
+We can give parameters a default value so callers don't always have to provide them
+
+**💻 [Check The Code Here](defaultParams.kt)**
+
+## Real Android use case — show toast/snack bar:
+
+**💻 [Check The Code Here](showSnackbar.kt)**
+
+---
+
+# 🔰 Named Arguments
+
+When calling a function, you can name the arguments — order doesn't matter:
+
+> Senior Engineer Rule:
+- When a function has more than 2-3 parameters, always use named arguments when calling it.
+- Six months later, createProfile("Shubham", 22, "Mumbai", true) tells you nothing.
+- Named arguments are self-documenting code.
+
+**💻 [Check The Code Here](namedArguments.kt)**
+
+---
+
+# 🔰 Unit Function
+
+When a function doesn't return anything, its return type is Unit — you usually just omit it:
+
+**💻 [Check The Code Here](unitFunction.kt)**
+
+- Think of Unit like void in Java.
+- In practice, you never write it — Kotlin assumes it when there's no return type.
+
+--- 
+
+# 🔰 Functions Calling Functions
+
+This is where real power comes in — functions working together:
+
+**💻 [Check The Code Here](functionCalling.kt)**
+
+- Each function does one job.
+- validateEmail only validates email.
+- canLogin only combines the validations.
+- showLoginResult only handles the display.
+- This is called the Single Responsibility Principle — the foundation of clean code.
+
+---
+
+# 🔰 `vararg` — Variable Number of Arguments
+Sometimes you don't know how many arguments will be passed:
+
+**💻 [Check The Code Here](varags.kt)**
+
+---
+
+# 🔰 Local Functions
+Functions inside functions — for logic that only belongs in one place:
+
+**💻 [Check The Code Here](localFunction.kt)**
+
+---
+
+# 📱 Real Android — Complete Feature Example
+
+**💻 [Check The Code Here](androidApp.kt)**
+
+---
+
+# 🔰 Functions Cheatsheet
+
+DECLARATION
+fun name() { }                        → no params, no return
+fun name(x: Int) { }                  → with parameter
+fun name(x: Int): String { }          → with return type
+fun name(x: Int) = x * 2             → single expression
+fun name(x: Int = 0) { }             → default parameter
+fun name(vararg items: String) { }   → variable arguments
+
+CALLING
+name()                                → basic call
+name(42)                              → positional argument
+name(x = 42)                          → named argument
+
+PRINCIPLES
+One function = One job
+Default to named args for 3+ params
+Single expression for simple returns
+Local functions for private helper logic
