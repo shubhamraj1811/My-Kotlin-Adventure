@@ -5,7 +5,7 @@
 3. [When Expression](#when-expression)
 4. [Exercise 07](#-exercise-007-the-tavern-encounter)
 5. [Exercise 08](#-exercise-008-conditionals-in-action)
-6. [Loops](#loops-in-kotlin)
+6. [Loops](#-loops-in-kotlin)
 7. [Android Use Case](#-android-use-case--waiting-for-data-to-load)
 8. [Infinite Loop — The Danger Zone](#-infinite-loop--the-danger-zone)
 9. [Do-While Loop](#do-while-loop)
@@ -272,3 +272,23 @@ Loaded 10/20 items...
 Loaded 15/20 items...  
 Loaded 20/20 items...  
 All items loaded! ✅
+
+---
+
+# 🛠 Exercise 10: The Combat Arena
+Let's build a wave-based combat simulator using loops.  
+I want to see you use both a for loop and a while loop.  
+> Task 01: The Countdown Using For
+> 1. Use a for loop to count down from 3 to 1 using downTo.
+> 2. Inside the loop, print: "Wave starts in [number]..."
+> 3. After the loop finishes, print: "FIGHT!"
+
+> Task 2: The Battle (Using while)
+> 1. Create var bossHealth = 50.
+> 2. Create var roundNumber = 1.
+> 3. Write a while loop that continues as long as bossHealth is greater than 0.
+> 4. Inside the loop:
+>    1. Subtract 15 from bossHealth.
+>    2. Print: "Round $roundNumber: You hit the boss for 15 damage! Boss HP is now $bossHealth."
+>    3. Increment the roundNumber by 1 (roundNumber++).
+> 5. After the loop finishes, print: "Boss defeated!"

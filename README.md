@@ -8,11 +8,12 @@ This repository is my personal workspace where I document my learning process, f
 ## 🗺️ Roadmap & Progress
 Use the table below to jump directly to the specific topics and code samples.
 
-| Topic         | Key Concepts                                | Direct Link to Code                                                       |
-|:--------------|:--------------------------------------------|:--------------------------------------------------------------------------|
-| **Lesson 01** | Introduction, User Input, Output Val vs Var | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson01) |
-| **Lesson 02** | DataTypes, Type Inference, Operators        | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson02) |
-| **Lesson 03** | If-Else, When, Loops                        | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson03) |
+| Topic         | Key Concepts                                | Direct Link to Code                                                        |
+|:--------------|:--------------------------------------------|:---------------------------------------------------------------------------|
+| **Lesson 01** | Introduction, User Input, Output Val vs Var | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson01)  |
+| **Lesson 02** | DataTypes, Type Inference, Operators        | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson02)  |
+| **Lesson 03** | If-Else, When, Loops                        | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson03)  |
+| **Lesson 04** | Functions, Lambda Functions                 | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson04)  |
 
 ---
 
