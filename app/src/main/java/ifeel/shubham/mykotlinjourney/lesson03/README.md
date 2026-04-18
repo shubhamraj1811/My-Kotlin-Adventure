@@ -13,6 +13,7 @@
 11. [Break and Continue](#break-and-continue)
 12. [Loop Cheatsheet](#-loop-cheatsheet)
 13. [Exercise 09](#-exercise-009-loops-in-action)
+14. [Exercise 10](#-exercise-10-the-combat-arena)
 
 ---
 

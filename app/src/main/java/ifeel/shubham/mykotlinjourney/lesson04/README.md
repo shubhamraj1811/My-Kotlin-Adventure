@@ -10,6 +10,8 @@
 9. [Vargs](#-vararg--variable-number-of-arguments)
 10. [Local Functions](#-local-functions)
 11. [Real Android Example](#-real-android--complete-feature-example)
+12. [Function Cheatsheet](#-functions-cheatsheet)
+13. [Exercise 11](#-exercise-11-functions-in-action)
 
 ---
 
@@ -171,3 +173,75 @@ One function = One job
 Default to named args for 3+ params
 Single expression for simple returns
 Local functions for private helper logic
+
+---
+
+# 🛠 Exercise 11: Functions in Action
+
+Scenario: You're building a banking app in Android.  
+
+> Task 1 — Basic Function:
+
+Write a function showWelcomeBanner() that prints:
+
+================================  
+    Welcome to ShubhamBank 🏦  
+================================  
+
+
+> Task 2 — Function With Parameters: 
+
+Write a function showBalance(accountHolder: String, balance: Double) that prints:
+```
+Account Holder : Shubham
+Current Balance: ₹25000.0
+```
+
+> Task 3 — Function With Return Value
+
+Write a function calculateInterest(principal: Double, ratePercent: Double, years: Int): Double that returns simple interest:
+
+`Formula: (principal * rate * years) / 100`    
+`Call it and print: "Interest earned: ₹2500.0"`  
+
+> Task 4 — Default Parameters:
+
+Write a function transferMoney with these parameters:
+- from: String
+- to: String
+- amount: Double
+- remarks: String = "Transfer"
+
+```
+Print: 
+Transfer of ₹500.0 from Shubham to Priya
+Remarks: Birthday Gift
+```
+
+> Task 5 — Functions Calling Functions:
+
+Write these three functions that work together:  
+
+```agsl
+fun isValidAmount(amount: Double): Boolean
+// returns true if amount > 0 and amount <= 100000
+
+fun isValidAccount(accountNumber: String): Boolean  
+// returns true if accountNumber length == 10
+
+fun processWithdrawal(accountNumber: String, amount: Double)
+// uses above two functions to validate
+// if valid: print "Withdrawal of ₹[amount] successful ✅"
+// if invalid: print "Transaction failed ❌ — [reason]"
+```
+
+**Test With:**  
+
+```
+processWithdrawal("1234567890", 5000.0)    // should succeed
+processWithdrawal("12345", 5000.0)          // should fail — invalid account
+processWithdrawal("1234567890", -500.0)     // should fail — invalid amount
+processWithdrawal("1234567890", 200000.0)   // should fail — exceeds limit
+```
+
+**[Check The Code Here](exercise11.kt)**
