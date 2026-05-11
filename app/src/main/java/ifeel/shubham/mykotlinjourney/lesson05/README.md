@@ -1,4 +1,4 @@
-# 🔥 Table of Contents
+_# 🔥 Table of Contents_
 1. [Null Safety in Kotlin](#null-safety-in-kotlin)
 2. [The Billion Dollar Mistake — Full Story](#-the-billion-dollar-mistake--full-story)
 3. [The Box Analogy](#-the-box-analogy--deeply-understood)
