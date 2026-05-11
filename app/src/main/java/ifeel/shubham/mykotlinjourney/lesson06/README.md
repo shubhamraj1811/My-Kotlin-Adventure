@@ -313,23 +313,23 @@ Delivery Partner: Assigning partner...
 ## 📊 Problem 2 Score: 14/20
 
 
-| Area                              | Score     |
-|-----------------------------------|-----------|
-| Cart item display + formatting    | 5/5 ✅     |
-| Subtotal calculation              | 2/2 ✅     |
-| Delivery fee logic                | 0/3 🔴    |
-| Coupon handling                   | 2/4 ⚠️    |
-| Null safety (partner)             | 1/2 ⚠️    |
-| Veg/Non-veg count + print         | 2/2 ✅     |
-| Code structure                    | 2/2 ✅     |
+| Area                           | Score  |
+|--------------------------------|--------|
+| Cart item display + formatting | 5/5 ✅  |
+| Subtotal calculation           | 2/2 ✅  |
+| Delivery fee logic             | 0/3 🔴 |
+| Coupon handling                | 2/4 ⚠️ |
+| Null safety (partner)          | 1/2 ⚠️ |
+| Veg/Non-veg count + print      | 2/2 ✅  |
+| Code structure                 | 2/2 ✅  |
 
 ---
 
 # Problem 3 — Fitness Tracker 🏃
 Daily fitness tracking like in Google Fit or Samsung Health.
 
-```agsl
-val userName: String = Shubham
+```
+val userName: String = "Shubham"
 val dailyStepGoal: Int = 10000
 val stepsWalked: Int = 7345
 val waterGoalLitres: Double = 3.0
@@ -341,17 +341,23 @@ val weight: Double? = 72.5
 ```
 
 - Calculate step completion percentage — round to 1 decimal
+
 - Use when with ranges to assign step achievement level:
   - 0-30% → "Just Getting Started 🐢"
   - 31-60% → "Keep Going 🚶"
   - 61-90% → "Almost There 🏃"
   - 91-100%+ → "Goal Crushed! 🔥"
+
 - Check water intake — show deficit or surplus
+
 - Check sleep — show how many hours short or over goal
+
 - Heart rate — use null safety to show reading or "Not measured today"
+
 - BMI — weight is nullable, only calculate if available
   - BMI formula: weight / (height * height) — use height 1.75
   - Category: Under 18.5 = Underweight, 18.5-24.9 = Normal, 25+ = Overweight
+
 - Print a full daily report
 
 > Expected Output style:
@@ -365,17 +371,35 @@ BMI:      23.7 — Normal ✅
 =====================================
 ```
 
+# 🤖 Solution & Code Review By ClaudeCode 🔐
+
+> [Problem 3 Solution](fitnessTracker.kt)
+
+## 📊 Problem 3 Score: 12/15
+
+| Area                            | Score      |
+|---------------------------------|------------|
+| Step % calculation & rounding   | 3/3 ✅      |
+| Step output format              | 1/2 ⚠️     |
+| Water intake logic              | 2/2 ✅      |
+| Sleep logic                     | 2/2 ✅      |
+| Heart rate null safety          | 2/2 ✅      |
+| BMI null safety (?.let)         | 1/2 ⚠️     |
+| Units in output                 | 1/2 ⚠️     |
+
+
+
 ---
 
 # Problem 4 — Movie Booking System 🎬
 Book movie tickets like BookMyShow.
-```agsl
-val movieName: String = Pushpa 2
+```
+val movieName: String = "Pushpa 2"
 val availableSeats: Int = 8
 val ticketPrice: Int = 250
 val userAge: Int = 16
 val isWeekend: Boolean = true
-val membershipType: String? = GOLD   // null, "SILVER", or "GOLD"
+val membershipType: String? = "GOLD"   // null, "SILVER", or "GOLD"
 ```
 
 ## Your program must:
