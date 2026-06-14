@@ -299,6 +299,7 @@ freezeAccount("Suspicious activity detected")
 deposit(1000.0)                       // should fail — frozen
 ```
 
+**[Solution](bankManager.kt)**
 ---
 
 # Problem 6 — Student Report Card 📊
@@ -445,3 +446,15 @@ Below   → Revisit fundamentals first
 | printBookingConfirmation format     | 2/4       | ⚠️      |
 | Test case coverage                  | 2/3       | ⚠️      |
 | **Total**                           | **14/20** |         |
+
+## 📊 Problem 5 Score: 14/15
+
+| Feature                            | Status  |
+|------------------------------------|---------|
+| Area Score                         | 3/3 ✅   |
+| Deposit Logic                      | 3/3 ✅   |
+| Withdraw Logic                     | 3/3 ✅   |
+| Transfer Logic & Daily Limit       | 3/3 ✅   |
+| Statement Printing                 | 2/2 ✅   |
+| Freeze Logic                       | 2/2 ✅   |
+| Error Message Accuracy/Consistency | 1/2 ⚠️  |

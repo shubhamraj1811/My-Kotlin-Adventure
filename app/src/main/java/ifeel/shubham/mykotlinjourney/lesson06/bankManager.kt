@@ -127,22 +127,4 @@ fun main() {
     deposit(1000.0)                       // should fail — account frozen
 }
 
-// Test sequence — run in this exact order:
-/*
-✅ Deposited ₹5000.0 | New Balance: ₹20000.0
-✅ Withdrawn ₹2000.0 | New Balance: ₹18000.0
-✅ Transfer of ₹10000.0 to SB-2024-11111 | Remarks: Rent Payment
-❌ Transfer failed — Daily limit of ₹50000.0 exceeded
-❌ Withdrawal failed — Insufficient balance (min ₹500 must remain)
 
-====== ACCOUNT STATEMENT ======
-Account Holder  : Shubham
-Account Number  : SB-2024-98765
-Balance         : ₹18000.0
-Transactions    : 3
-Transfer Limit  : ₹35000.0 remaining
-================================
-
-🔒 Account frozen — Reason: Suspicious activity detected
-❌ Transaction failed — Account is frozen
-*/
