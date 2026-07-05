@@ -15,6 +15,11 @@ Use the table below to jump directly to the specific topics and code samples.
 | **Lesson 03** | If-Else, When, Loops                        | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson03)  |
 | **Lesson 04** | Functions, Types of Functions               | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson04)  |
 | **Lesson 05** | Null, Null Safety                           | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson05)  |
+| **Lesson 06** | Test - Real World Android Problems          | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson06)  |
+| **Lesson 07** | Collections, Lists, Sets, Maps              | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson07)  |
+| **Lesson 08** | OOPs                                        | [View Notes ↗️](app/src/main/java/ifeel/shubham/mykotlinjourney/lesson08)  |
+
+
 ---
 
 ## 📂 Project Structure
