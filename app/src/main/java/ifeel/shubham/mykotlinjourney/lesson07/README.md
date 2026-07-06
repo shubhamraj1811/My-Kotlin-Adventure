@@ -64,7 +64,6 @@ This is why null safety matters everywhere. Maps are a perfect real-world reason
 
 ## Mutable Map
 - Create a mutable map with mutableMapOf()
-- 
 - In mutable maps
 - used to add or remove elements.
 - [Check The Code Here](mutablemaps.kt)
