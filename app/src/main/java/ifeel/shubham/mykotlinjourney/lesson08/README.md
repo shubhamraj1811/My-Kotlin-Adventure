@@ -28,7 +28,7 @@ var isAvailable2 = false
 
 Thats why we use Classes and Objects
 
-```agsl
+```
 // Write the BLUEPRINT once
 class Apartment(
     val address: String,
@@ -70,3 +70,8 @@ val apt3 = Apartment("Andheri, Mumbai", 15000, 1, true)
 - CreateHuman(...) calls the constructor.
 - A new object is created in memory.
 - The constructor fills the properties with the provided values.
+
+---
+
+# `this` Keyword
+Inside a class, this refers to the current object — the instance the method is being called on.
