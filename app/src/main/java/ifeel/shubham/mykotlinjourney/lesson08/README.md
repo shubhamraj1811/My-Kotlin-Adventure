@@ -1,5 +1,9 @@
 # 🔥 Table of Contents
 
+1. [CORE IDEA](#the-core-idea)
+2. [FIRST EXAMPLE](#first-example---createmyhuman)
+3. [THIS KEYWORD](#this-keyword)
+4. [METHOD CALLING](#class-methods-calling-each-other)
 ---
 # The Core Idea
 Imagine we're building a housing app like NoBroker. We need to represent 10,000 apartments. Each apartment has:
@@ -75,3 +79,55 @@ val apt3 = Apartment("Andheri, Mumbai", 15000, 1, true)
 
 # `this` Keyword
 Inside a class, this refers to the current object — the instance the method is being called on.
+
+---
+# CLASS METHODS CALLING EACH OTHER
+
+**COFFEE SHOP APP EXAMPLE**
+[CHECK THE CODE HERE](methodCalling.kt)
+
+---
+# REAL WORLD APP - CHAICOFFEE
+The struture of this app  
+[CHECK THE CODE HERE](ChaiCoffee.kt)
+
+## OOP BREAKDOWN
+
+**One Coffee Item**
+```
+Coffee
+│
+├── name
+└── price
+```
+
+**Coffee Shop**
+```
+CoffeeShop
+│
+├── menu
+├── showMenu()
+└── getCoffee()
+```
+
+**Customer Order**
+```
+Order
+│
+├── cart
+├── addCoffee()
+└── printBill()
+```
+
+
+
+
+**This example demonstrates:**
+
+✅ Class  
+✅ Objects  
+✅ Constructor  
+✅ Properties  
+✅ Methods  
+✅ Encapsulation  
+✅ Composition (Order contains Coffee objects)  
