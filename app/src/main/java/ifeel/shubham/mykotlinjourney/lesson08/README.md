@@ -6,10 +6,15 @@
 4. [METHOD CALLING](#class-methods-calling-each-other)
 5. [REAL WORLD APP](#real-world-app---chaicoffee)
 6. [CHEATSHEET](#cheatsheet)
-7. [EXERCISE 01](#exercise--oops-1)
+7. [EXERCISE 01](#️⃣-exercise--oops-1)
+8. [CONSTRUCTORS](#constructors)
+9. [INIT BLOCK](#️⃣-init-block)
+10. [PRIMARY VS SECONDARY CONSTRUCTOR](#️⃣-primary-vs-secondary--when-to-use-which)
+11. [CHEATSHEET](#️⃣-cheatsheet)
+12. [EXERCISE 02](#️⃣-exercise---oops-2)
 
 ---
-# The Core Idea
+# #️⃣ The Core Idea
 Imagine we're building a housing app like NoBroker. We need to represent 10,000 apartments. Each apartment has:
 
 - An address
@@ -55,7 +60,7 @@ val apt3 = Apartment("Andheri, Mumbai", 15000, 1, true)
 > A class is a blueprint. An object is what we build from it.
 
 ---
-# First Example - CreateMyHuman
+# #️⃣ First Example - CreateMyHuman
 
 [CHECK THE CODE HERE](createMyHuman.kt)
 
@@ -81,21 +86,23 @@ val apt3 = Apartment("Andheri, Mumbai", 15000, 1, true)
 
 ---
 
-# `this` Keyword
+# #️⃣ `this` Keyword
 Inside a class, this refers to the current object — the instance the method is being called on.
 
 ---
-# CLASS METHODS CALLING EACH OTHER
+
+# #️⃣ CLASS METHODS CALLING EACH OTHER
 
 **COFFEE SHOP APP EXAMPLE**
 [CHECK THE CODE HERE](methodCalling.kt)
 
 ---
-# REAL WORLD APP - CHAICOFFEE
+
+# #️⃣ REAL WORLD APP - CHAICOFFEE
 The struture of this app  
 [CHECK THE CODE HERE](ChaiCoffee.kt)
 
-## OOP BREAKDOWN
+## ❇️ OOP BREAKDOWN
 
 **One Coffee Item**
 ```
@@ -134,7 +141,7 @@ Order
 ✅ Composition (Order contains Coffee objects)  
 
 ---
-# CHEATSHEET
+# #️⃣ CHEATSHEET
 
 ```
 DEFINING A CLASS
@@ -167,11 +174,13 @@ Methods operate on the object they're called on
 ```
 
 ---
-# EXERCISE : OOPs 1
+# #️⃣ EXERCISE : OOPs 1
 
 > Scenario: You're building a ride-sharing app like Ola or Uber.
 
-## Task 1 — Create a Driver class with:
+**[CHECK THE CODE HERE](uberClone.kt)**
+
+## ❇️ Task 1 — Create a Driver class with:
 
 - Properties: 
   - `name`,
@@ -185,7 +194,7 @@ Methods operate on the object they're called on
   - `receiveRating(newRating: Double)` — updates rating to average of current and new rating
   - `printProfile()` — prints full driver profile
 
-## Task 2 — Create a Ride class with:
+## ❇️ Task 2 — Create a Ride class with:
 - Properties: 
   - `passengeName`, 
   - `pickupLocation`, 
@@ -196,7 +205,7 @@ Methods operate on the object they're called on
   - startRide() — prints ride started message, nothing else
   - endRide() — sets isCompleted = true, prints completion message with fare
 
-## Task 3 — Connect them in main():
+## ❇️ Task 3 — Connect them in main():
 
 - Create 2 driver objects
 - Create 2 ride objects
@@ -204,7 +213,7 @@ Methods operate on the object they're called on
 - Driver 2 accepts Ride 2 → completes it → receives rating of 4.0
 - Print both driver profiles at the end
 
-## Expected output style:
+## ❇️ Expected output style:
 
 ```
 🚗 Rahul accepted ride from Shubham
@@ -222,4 +231,229 @@ Rating        : 4.75 ⭐
 Total Rides   : 1
 Available     : true
 ==========================
+```
+
+---
+
+# #️⃣ CONSTRUCTORS
+
+Before we even define a constructor, let's ask a question.  
+**Imagine there are no constructors.**  
+
+We have our `Ride` class from the Ola example.  
+
+```
+class Ride {
+
+    var pickup = ""
+    var destination = ""
+    var distance = 0.0
+}
+```
+
+Now in `main()`:
+
+```
+fun main() {
+    val ride = Ride()
+
+    ride.pickup = "Patna"
+    ride.destination = "Airport"
+    ride.distance = 12.5
+}
+```
+
+This works. So why did Kotlin invent constructors?  
+This is because when we create a ride, we must remember to write everything, what if we forgot to pass one parameter.  
+Like, `ride.pickup = "Patna"`, `ride.distance = 25`  
+But destination was never assigned.
+> This is called an invalid object state.
+> Constructors solve this problem.
+
+---
+
+## ❇️ What is a Constructor?
+Constructor is a special function that runs automatically when an object is created.
+Its job is:
+> Whenever someone creates a `ride` object, it make sure it make sure it gets all the required information.
+
+---
+
+## ❇️ Primary Constructor
+
+The primary constructor lives in the class header - on the same line as class name:  
+**[CHECK THE CODE HERE - PRIMARY CONSTRUCTOR](primaryConstructor.kt)**
+
+### CREATING AN OBJECT
+1. Memory is allocated -> Heap ( Ride Object )
+2. Constructor runs
+   1. `name = "Rahul"`
+   2. `rating = 4.5`
+3. These values are stored inside the project
+
+> `val/var` in the constructor header automatically creates properties. We don't need to declare them separately in the body.
+
+**[CHECK THE CODE HERE](constructor.kt)**
+
+
+---
+
+## ❇️ Default Values in Primary Constructor
+
+Just like functions, constructors can have default values:  
+**[CHECK THE CODE HERE](defaultValueInConstructor.kt)**
+
+---
+
+# #️⃣ `init` BLOCK
+
+`init` stands for initilizer block.  
+
+It is a block of code that runs automatically every time an object is created, immediately after the primary constructor receives its parameters.
+
+## ❇️ init WORKFLOW
+
+```
+Object Creation
+      │
+      ▼
+Primary Constructor receives values
+      │
+      ▼
+init block executes
+      │
+      ▼
+Object is ready
+```
+
+**EXAMPLE OF init - [CHECK THE CODE HERE](initBlock.kt)
+
+---
+
+# #️⃣ SECONDARY CONSTRUCTOR
+
+A secondary constructor is an alternative way to create an object — useful when we want to support multiple creation patterns:  
+**[CHECK THE CODE HERE](secondaryConstructor.kt)**  
+
+> this(...) in secondary constructor means "call the primary constructor with these values." Every secondary constructor must eventually call the primary constructor — directly or through another secondary constructor.
+
+---
+
+# #️⃣ Primary vs Secondary — When to Use Which?
+
+╔══════════════════════════════════════════════════════════════╗
+║  USE PRIMARY CONSTRUCTOR WHEN:                               ║
+║  → Most creation scenarios use the same params               ║
+║  → You can use default values to cover variations            ║
+║  → Simpler, cleaner — prefer this always                     ║
+║                                                              ║
+║  USE SECONDARY CONSTRUCTOR WHEN:                             ║
+║  → Different creation scenarios need completely              ║
+║    different input types (e.g. String vs Map)                ║
+║  → You're integrating with Java code                         ║
+║  → Framework requires it (some Android classes)              ║
+╚══════════════════════════════════════════════════════════════╝
+
+---
+
+# #️⃣ CHEATSHEET
+
+```
+PRIMARY CONSTRUCTOR
+class Person(val name: String, var age: Int)
+→ params become properties automatically with val/var
+→ clean, idiomatic, always prefer this
+
+DEFAULT VALUES
+class Person(val name: String, val age: Int = 0)
+→ makes params optional
+→ replace most secondary constructors
+
+INIT BLOCK
+init {
+    // runs immediately when object is created
+    // can validate, compute derived values, log
+}
+
+SECONDARY CONSTRUCTOR
+constructor(x: Type) : this(x, default, default)
+→ must call primary constructor via this(...)
+→ use only when default params aren't enough
+
+EXECUTION ORDER
+1. Primary constructor params set
+2. init blocks run (top to bottom)
+3. Object is ready to use
+4. Methods run only when called
+
+NAMED ARGUMENTS (always use for 3+ params)
+val p = Person(name = "Shubham", age = 22)
+```
+
+---
+
+# #️⃣ EXERCISE - OOPS 2
+
+> You're building a streaming app like Netflix
+
+## ❇️ Task 1 — Movie class
+
+Create a Movie class with a primary constructor:
+
+```
+title: String
+director: String
+releaseYear: Int
+durationMinutes: Int
+genre: String
+rating: Double = 0.0 (default)
+isPremium: Boolean = false (default)
+```
+
+Add an init block that:
+
+```
+Validates durationMinutes > 0 — throw IllegalArgumentException("Invalid duration") if not
+Validates releaseYear >= 1888 (first ever movie was 1888) — throw exception if not
+Prints: "🎬 Movie loaded: [title] ([releaseYear])"
+```
+
+Add a method getDetails() that prints:
+
+```
+Title    : Pushpa 2
+Director : Sukumar
+Year     : 2024
+Duration : 2h 30m
+Genre    : Action
+Rating   : 8.5 ⭐
+Premium  : Yes
+```
+
+> Hint: duration in "2h 30m" format → ${durationMinutes/60}h ${durationMinutes%60}m
+
+---
+
+## ❇️ Task 2 - StreamingUser class:
+
+- Primary constructor: `username: String`, `email: String`, `plan: String = "FREE"`
+- Secondary constructor that takes just `username: String` — sets `email` to `"$username@guest.com"`, `plan` to `"FREE"`
+- init block prints: `"👤 User registered: [username] ([plan] plan)"`
+- Property `watchHistory` — a `mutableListOf<String>()` (empty list, not in constructor)
+- Method `watchMovie(movie: Movie)`:
+  - If movie is premium AND user plan is `"FREE"` → print `"❌ Upgrade to watch [title]"`
+  - Otherwise → add `movie title` to `watchHistory`, print `"▶️ Now watching: [title]"`
+- Method `printWatchHistory()` — print all watched titles with numbers
+
+
+---
+
+## ❇️ Task 3 — Connect in main():
+
+```
+// Create 3 movies (mix of premium/free, different details)
+// Create 2 users (one FREE, one PREMIUM)
+// Have each user try to watch all 3 movies
+// Print both users' watch histories at the end
+// Also test the invalid movie (negative duration) — catch the exception
 ```
