@@ -4,6 +4,10 @@
 2. [FIRST EXAMPLE](#first-example---createmyhuman)
 3. [THIS KEYWORD](#this-keyword)
 4. [METHOD CALLING](#class-methods-calling-each-other)
+5. [REAL WORLD APP](#real-world-app---chaicoffee)
+6. [CHEATSHEET](#cheatsheet)
+7. [EXERCISE 01](#exercise--oops-1)
+
 ---
 # The Core Idea
 Imagine we're building a housing app like NoBroker. We need to represent 10,000 apartments. Each apartment has:
@@ -119,9 +123,6 @@ Order
 └── printBill()
 ```
 
-
-
-
 **This example demonstrates:**
 
 ✅ Class  
@@ -131,3 +132,94 @@ Order
 ✅ Methods  
 ✅ Encapsulation  
 ✅ Composition (Order contains Coffee objects)  
+
+---
+# CHEATSHEET
+
+```
+DEFINING A CLASS
+class ClassName {
+    var property = value          → class property
+    fun method() { }              → class method
+}
+
+CREATING AN OBJECT (INSTANCE)
+val obj = ClassName()             → creates one instance
+
+ACCESSING MEMBERS
+obj.property                      → read property
+obj.property = newValue           → write (if var)
+obj.method()                      → call method
+
+THE 'this' KEYWORD
+this.property                     → current object's property
+this.method()                     → current object's method
+                                   (needed when names conflict)
+
+KEY CONCEPTS
+Class     → blueprint / recipe
+Object    → instance built from blueprint
+Instance  → one specific object
+           (dog1 and dog2 are two instances of Dog)
+
+Each object has its own COPY of properties
+Methods operate on the object they're called on
+```
+
+---
+# EXERCISE : OOPs 1
+
+> Scenario: You're building a ride-sharing app like Ola or Uber.
+
+## Task 1 — Create a Driver class with:
+
+- Properties: 
+  - `name`,
+  - `rating` (Double), 
+  - `totalRides` (Int), 
+  - `isAvailable` (Boolean), 
+  - `vehicleNumber` (String)
+- Method 
+  - `acceptRide(passengerName: String)` — prints acceptance message, sets `isAvailable = false`, increments totalRides
+  - `completeRide(earnedAmount: Double)` — prints completion message, sets isAvailable = true
+  - `receiveRating(newRating: Double)` — updates rating to average of current and new rating
+  - `printProfile()` — prints full driver profile
+
+## Task 2 — Create a Ride class with:
+- Properties: 
+  - `passengeName`, 
+  - `pickupLocation`, 
+  - `dropLocation`, 
+  - `fare (Double)`, 
+  - `isCompleted (Boolean)`
+- Method: 
+  - startRide() — prints ride started message, nothing else
+  - endRide() — sets isCompleted = true, prints completion message with fare
+
+## Task 3 — Connect them in main():
+
+- Create 2 driver objects
+- Create 2 ride objects
+- Driver 1 accepts Ride 1 → completes it → receives rating of 5.0
+- Driver 2 accepts Ride 2 → completes it → receives rating of 4.0
+- Print both driver profiles at the end
+
+## Expected output style:
+
+```
+🚗 Rahul accepted ride from Shubham
+✅ Ride completed! Earned: ₹250.0
+⭐ New rating for Rahul: 4.75
+
+🚗 Priya accepted ride from Sneha
+✅ Ride completed! Earned: ₹180.0
+⭐ New rating for Priya: 4.5
+
+===== DRIVER PROFILE =====
+Name          : Rahul
+Vehicle       : MH02 AB 1234
+Rating        : 4.75 ⭐
+Total Rides   : 1
+Available     : true
+==========================
+```
