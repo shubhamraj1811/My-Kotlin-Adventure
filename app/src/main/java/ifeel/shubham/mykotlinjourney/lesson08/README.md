@@ -1,20 +1,22 @@
 # 🔥 Table of Contents
 
-1. [CORE IDEA](#the-core-idea)
-2. [FIRST EXAMPLE](#first-example---createmyhuman)
-3. [THIS KEYWORD](#this-keyword)
-4. [METHOD CALLING](#class-methods-calling-each-other)
-5. [REAL WORLD APP](#real-world-app---chaicoffee)
-6. [CHEATSHEET](#cheatsheet)
+1. [CORE IDEA](#️⃣-the-core-idea)
+2. [FIRST EXAMPLE](#️⃣-first-example---createmyhuman)
+3. [THIS KEYWORD](#️⃣-this-keyword)
+4. [METHOD CALLING](#️⃣-class-methods-calling-each-other)
+5. [REAL WORLD APP](#️⃣-real-world-app---chaicoffee)
+6. [CHEATSHEET](#️⃣-cheatsheet)
 7. [EXERCISE 01](#️⃣-exercise--oops-1)
-8. [CONSTRUCTORS](#constructors)
+8. [CONSTRUCTORS](#️⃣-constructors)
 9. [INIT BLOCK](#️⃣-init-block)
 10. [PRIMARY VS SECONDARY CONSTRUCTOR](#️⃣-primary-vs-secondary--when-to-use-which)
-11. [CHEATSHEET](#️⃣-cheatsheet)
+11. [CHEATSHEET](#️⃣-cheatsheet-2)
 12. [EXERCISE 02](#️⃣-exercise---oops-2)
 
 ---
+
 # #️⃣ The Core Idea
+
 Imagine we're building a housing app like NoBroker. We need to represent 10,000 apartments. Each apartment has:
 
 - An address
@@ -60,6 +62,7 @@ val apt3 = Apartment("Andheri, Mumbai", 15000, 1, true)
 > A class is a blueprint. An object is what we build from it.
 
 ---
+
 # #️⃣ First Example - CreateMyHuman
 
 [CHECK THE CODE HERE](createMyHuman.kt)
@@ -105,6 +108,7 @@ The struture of this app
 ## ❇️ OOP BREAKDOWN
 
 **One Coffee Item**
+
 ```
 Coffee
 │
@@ -113,6 +117,7 @@ Coffee
 ```
 
 **Coffee Shop**
+
 ```
 CoffeeShop
 │
@@ -122,6 +127,7 @@ CoffeeShop
 ```
 
 **Customer Order**
+
 ```
 Order
 │
@@ -141,6 +147,7 @@ Order
 ✅ Composition (Order contains Coffee objects)  
 
 ---
+
 # #️⃣ CHEATSHEET
 
 ```
@@ -174,6 +181,7 @@ Methods operate on the object they're called on
 ```
 
 ---
+
 # #️⃣ EXERCISE : OOPs 1
 
 > Scenario: You're building a ride-sharing app like Ola or Uber.
@@ -188,6 +196,7 @@ Methods operate on the object they're called on
   - `totalRides` (Int), 
   - `isAvailable` (Boolean), 
   - `vehicleNumber` (String)
+  
 - Method 
   - `acceptRide(passengerName: String)` — prints acceptance message, sets `isAvailable = false`, increments totalRides
   - `completeRide(earnedAmount: Double)` — prints completion message, sets isAvailable = true
@@ -295,7 +304,6 @@ The primary constructor lives in the class header - on the same line as class na
 
 **[CHECK THE CODE HERE](constructor.kt)**
 
-
 ---
 
 ## ❇️ Default Values in Primary Constructor
@@ -356,7 +364,7 @@ A secondary constructor is an alternative way to create an object — useful whe
 
 ---
 
-# #️⃣ CHEATSHEET
+# #️⃣ CHEATSHEET 2
 
 ```
 PRIMARY CONSTRUCTOR
@@ -395,6 +403,8 @@ val p = Person(name = "Shubham", age = 22)
 # #️⃣ EXERCISE - OOPS 2
 
 > You're building a streaming app like Netflix
+
+**[CHECK THE CODE HERE](netflixClone.kt)**
 
 ## ❇️ Task 1 — Movie class
 
@@ -444,7 +454,6 @@ Premium  : Yes
   - If movie is premium AND user plan is `"FREE"` → print `"❌ Upgrade to watch [title]"`
   - Otherwise → add `movie title` to `watchHistory`, print `"▶️ Now watching: [title]"`
 - Method `printWatchHistory()` — print all watched titles with numbers
-
 
 ---
 

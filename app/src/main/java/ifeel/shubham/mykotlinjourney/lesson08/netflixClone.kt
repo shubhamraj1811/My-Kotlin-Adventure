@@ -1,6 +1,6 @@
 package ifeel.shubham.mykotlinjourney.lesson08
 
-// Building a NETFLIX like app
+// Exercise 02 -  Building a NETFLIX like app
 
 class Movie (
    val title: String,
@@ -110,25 +110,16 @@ fun main () {
       "PREMIUM"
    )
 
-   // for user 1
-   user1.watchMovie(movie1)
-   println()
-   user1.watchMovie(movie2)
-   println()
-   user1.watchMovie(movie3)
-   println()
+   // get movie details
+   listOf(movie1, movie2, movie3).forEach { movie ->
+      movie.getDetails()
+      println()
+   }
 
-   // for user 2
-   user2.watchMovie(movie1)
-   println()
-   user2.watchMovie(movie2)
-   println()
-   user2.watchMovie(movie3)
-   println()
-
-   println("\n=== ${user1.username}'s Watch History ===")
-   user1.printWatchHistory()
-
-   println("\n=== ${user2.username}'s Watch History ===")
-   user2.printWatchHistory()
+   // user watch movies
+   listOf(movie1, movie2, movie3).forEach { movie ->
+      listOf(user1, user2).forEach { user ->
+         user.watchMovie(movie)
+      }
+   }
 }
