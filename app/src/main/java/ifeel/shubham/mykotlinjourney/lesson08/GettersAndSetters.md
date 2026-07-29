@@ -227,10 +227,3 @@ Yes.
 
 field is the backing field—the actual storage for the property's value. It's available only inside that property's getter and setter.
 
-
-#### 🟥
-#### 🟥
-
-
-🌐❇️🟩🟦🟥🟪🔷🔶💭🚀
-✅❌💻

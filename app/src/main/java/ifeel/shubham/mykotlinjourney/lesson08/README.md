@@ -548,3 +548,7 @@ PROTECTED → this class + subclasses
 ## ❇️ GETTERS & SETTERS
 
 **[VIEW NOTES](GettersAndSetters.md)**
+
+## ❇️ INHERITANCE IN KOTLIN
+
+**[VIEW NOTES OF INHERITANCE](Inheritance.md)**
