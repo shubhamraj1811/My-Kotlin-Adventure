@@ -74,6 +74,9 @@ open class Vehicle
 
 ### 🟦 Creating a Child Class
 
+**[CHILD CLASS CODE INHERITING FROM PARENT](InheritanceChildClass.kt)**
+
+
 Now Bike Becomes: `class Bike : Vehicle()`  
 Similarly: `class Car : Vehicle()`  
 
