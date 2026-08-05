@@ -1,4 +1,6 @@
-# 🔥 Table of Contents
+# 🔥 CHAPTER 08: OOPs
+
+---
 
 
 ## #️⃣ The Core Idea
@@ -28,8 +30,11 @@
 ## #️⃣ INHERITANCE IN KOTLIN
 **[VIEW NOTES OF INHERITANCE](Inheritance.md)**
 
+## #️⃣ METHOD OVERRIDING
+**[VIEW NOTES](MethodOverriding.md)**
 
-
+## #️⃣ POLYMORPHISM
+**[VIEW NOTES]()**
 
 
 
