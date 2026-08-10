@@ -157,7 +157,3 @@ We can use the interface as a common type
    ↓
 This enables polymorphism + loose coupling
 ```
-
-
-
-❇️📱✅❌⌛⚙️🔥🔰🛡️🔷💭⚜️🔱🚀💻
