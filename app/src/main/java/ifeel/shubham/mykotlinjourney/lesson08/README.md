@@ -34,13 +34,13 @@
 **[VIEW NOTES](MethodOverriding.md)**
 
 ## #️⃣ POLYMORPHISM
-**[VIEW NOTES]()**
+**[VIEW NOTES](#️⃣-polymorphism)**
 
+## #️⃣ ABSTRACT CLASSES
+**[VIEW NOTES](AbstractClass.md)**
 
-
-
-
-
+## #️⃣ INTERFACES
+**[VIEW NOTES](AbstractClass.md)**
 
 ## #️⃣ CHEATSHEETS
 **[CHEATSHEET](Cheatsheet.md)**
